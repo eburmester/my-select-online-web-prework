@@ -9,4 +9,3 @@ def my_select(collection)
     return result_array
 end
 end 
-end

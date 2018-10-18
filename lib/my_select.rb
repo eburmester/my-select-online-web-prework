@@ -3,8 +3,7 @@ def my_select(collection)
     result_array = []
     counter = 0 
     while counter < collection.length 
-      for num in collection 
-      result_array << num if yield == true
+      result_array << collection[counter] if yield(collection[counter]) 
       counter += 1 
     end
     return result_array
